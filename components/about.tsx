@@ -16,7 +16,7 @@ const About = (props: Props) => {
                 <div className='flex flex-col'>
                     <p className='pb-4 border-b-4  border-gray-700 text-violet-500 font-bold text-4xl sm: mt-2 font-poppins'>About Me</p>
                     <p className='text-white text-xl pt-4 font-poppins'>
-                       I'm a new graduate computer engineer. I mostly improved myself in the front-end, back-end and database sections.
+                       I&apos;m a new graduate computer engineer. I mostly improved myself in the front-end, back-end and database sections.
                        During my internship period, I took part in the project as a full stack developer for 3 months. <br/><br/>
                        As a graduation project, I developed a blockchain-based web application where real estate purchases and sales are carried out.
                        <br />I am currently developing myself on Web3, Solidity and Blockchain Technology.

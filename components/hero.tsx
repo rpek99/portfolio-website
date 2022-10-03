@@ -9,8 +9,8 @@ const Hero = (props: Props) => {
     return(
         <div className='text-white p-2' id="home">
            <div className='max-w-[800px] mt-[-86px] w-full h-screen mx-auto text-left flex flex-col justify-center sm: px-2'>
-                <p className='text-violet-500 font-bold text-2xl my-2 mt-16'>Hi, I'm Rustem Pek</p>
-                <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>I'm a Full Stack Developer</h1>
+                <p className='text-violet-500 font-bold text-2xl my-2 mt-16'>Hi, I&apos;m Rustem Pek</p>
+                <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>I&apos;m a Full Stack Developer</h1>
                 <div className='flex items-center py-2'>
                     <p className='md:h-24 md:text-5xl sx:text-4xl text-xl font-bold py-4'>
                         I have experience in

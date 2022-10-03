@@ -20,17 +20,17 @@ const Footer = (props: Props) => {
            </div>
            <div>
                 <div className='flex justify-between lg:ml-48 my-2'>
-                    <a target="_blank" href="https://www.linkedin.com/in/r%C3%BCstem-pek-277118149/">
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/r%C3%BCstem-pek-277118149/">
                         <button className='hover:scale-125 duration-150'>
                             <FaLinkedin size={30}/>
                         </button>
                     </a>   
-                    <a target="_blank" href="https://twitter.com/rustempk">
+                    <a target="_blank" rel="noreferrer" href="https://twitter.com/rustempk">
                         <button className='hover:scale-125 duration-150'>
                             <FaTwitterSquare size={30}/>
                         </button>
                     </a>
-                    <a target="_blank" href="https://github.com/rpek99">
+                    <a target="_blank" rel="noreferrer" href="https://github.com/rpek99">
                         <button className='hover:scale-125 duration-150'>
                             <FaGithubSquare size={30}/>
                         </button>
