@@ -6,9 +6,14 @@ import Hero from '../components/hero';
 import Navbar from '../components/navbar';
 import Projects from '../components/projects';
 
+import Head from 'next/head'
+
 const Home: NextPage = () => {
   return (
     <div>
+      <Head>
+        <title>Rustem Pek</title>
+      </Head>
       <Navbar />
       <Element id="home" name='home'>
         <Hero />
