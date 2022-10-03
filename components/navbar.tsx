@@ -30,24 +30,26 @@ const Navbar = (props: Props) => {
     return (
         <div className={navColor ? 'sticky top-0 z-50 w-full bg-neutral-800 ease-in-out duration-300' : 'sticky top-0 z-50 w-full bg-transparent ease-in-out duration-300'}>
             <div className='flex justify-between items-center h-[70px] max-w-[1240px] mx-auto px-4 text-white'>
-                <h1 className='w-full text-3xl font-bold text-violet-500'>RPEK.</h1>
-                <ul className='hidden md:flex'>
-                    <li className='p-4 rounded-md text-[18px] hover:scale-110 hover:text-violet-400 '>
+                <button>
+                    <h1 className='w-full text-3xl font-bold text-violet-500'>RPEK.</h1>
+                </button>
+                <ul className='hidden md:flex font-poppins'>
+                    <li className='p-4 rounded-md text-[18px] hover:scale-110 hover:text-violet-400 ease-in-out duration-200'>
                         <Link to='home' spy={true} smooth={true} offset={-100} duration={500}>
                             <button >Home</button> 
                         </Link>
                     </li>
-                    <li className='p-4 rounded-md text-[18px] hover:scale-110 hover:text-violet-400'>
+                    <li className='p-4 rounded-md text-[18px] hover:scale-110 hover:text-violet-400 ease-in-out duration-200'>
                         <Link to='about' spy={true} smooth={true} offset={-175} duration={600}>
                             <button>About</button>
                         </Link>
                     </li>
-                    <li className='p-4 rounded-md text-[18px] hover:scale-110 hover:text-violet-400'>
+                    <li className='p-4 rounded-md text-[18px] hover:scale-110 hover:text-violet-400 ease-in-out duration-200'>
                         <Link to='projects' spy={true} smooth={true} offset={-50} duration={800}>
                             <button>Projects</button>
                         </Link>
                     </li>
-                    <li className='p-4 rounded-md text-[18px] hover:scale-110 hover:text-violet-400'>
+                    <li className='p-4 rounded-md text-[18px] hover:scale-110 hover:text-violet-400 ease-in-out duration-200'>
                         <Link to='contact' spy={true} smooth={true} offset={-100} duration={1500}>
                             <button>Contact</button>
                         </Link>
@@ -58,23 +60,23 @@ const Navbar = (props: Props) => {
                 </div>
                 <div className={nav ? 'fixed left-0 top-0 w-[40%] h-full border-r border-r-neutral-800 bg-neutral-900 ease-in-out duration-500 block md:hidden' : 'fixed left-[-100%]'}>
                     <h1 className='w-full text-3xl font-bold text-violet-600 m-4'>RPEK.</h1>
-                    <ul className='p-4 font-bold'>
-                        <li className='p-4 border-b border-gray-600 hover:scale-110 hover:text-violet-400'>
+                    <ul className='p-4 font-poppins text-xl'>
+                        <li className='p-4 border-b border-gray-600 hover:scale-110 hover:text-violet-400 ease-in-out duration-200'>
                             <Link to='home' spy={true} smooth={true} offset={-100} duration={1000}>
                                 <button>Home</button>
                             </Link>
                         </li>
-                        <li className='p-4 border-b border-gray-600 hover:scale-110 hover:text-violet-400'>
+                        <li className='p-4 border-b border-gray-600 hover:scale-110 hover:text-violet-400 ease-in-out duration-200'>
                             <Link to='about' spy={true} smooth={true} offset={-20} duration={1000}>
                                 <button>About</button>
                             </Link>
                         </li> 
-                        <li className='p-4 border-b border-gray-600 hover:scale-110 hover:text-violet-400'>
+                        <li className='p-4 border-b border-gray-600 hover:scale-110 hover:text-violet-400 ease-in-out duration-200'>
                             <Link to='projects' spy={true} smooth={true} offset={-100} duration={1000}>
                                 <button>Projects</button>
                             </Link>
                         </li>
-                        <li className='p-4 hover:scale-110 hover:text-violet-400'>
+                        <li className='p-4 hover:scale-110 hover:text-violet-400 ease-in-out duration-200'>
                             <Link to='contact' spy={true} smooth={true} offset={-100} duration={1000}>
                                 <button >Contact</button>
                             </Link>

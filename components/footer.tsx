@@ -19,30 +19,25 @@ const Footer = (props: Props) => {
                 <h1 className='w-full text-3xl font-bold text-violet-600 pb-6'>RPEK.</h1>
            </div>
            <div>
-                <div className='flex justify-between md:w-[75%] my-2'>
+                <div className='flex justify-between lg:ml-48 my-2'>
                     <a target="_blank" href="https://www.linkedin.com/in/r%C3%BCstem-pek-277118149/">
-                        <button className='hover:scale-110'>
+                        <button className='hover:scale-125 duration-150'>
                             <FaLinkedin size={30}/>
                         </button>
                     </a>   
                     <a target="_blank" href="https://twitter.com/rustempk">
-                        <button className='hover:scale-110'>
+                        <button className='hover:scale-125 duration-150'>
                             <FaTwitterSquare size={30}/>
                         </button>
                     </a>
                     <a target="_blank" href="https://github.com/rpek99">
-                        <button className='hover:scale-110'>
+                        <button className='hover:scale-125 duration-150'>
                             <FaGithubSquare size={30}/>
                         </button>
                     </a>
                     <a>
-                        <button type="button" className='hover:scale-110' onClick={() => router.push('mailto:rstmpk28@gmail.com')}>
+                        <button type="button" className='hover:scale-125 duration-150' onClick={() => router.push('mailto:rstmpk28@gmail.com')}>
                             <SiGmail size={30}/>
-                        </button>
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/rustempek/"> 
-                        <button className='hover:scale-110'>
-                            <FaInstagram size={30}/>
                         </button>
                     </a>
                 </div>

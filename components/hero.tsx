@@ -17,13 +17,13 @@ const Hero = (props: Props) => {
                     </p>
                     <Typed
                         className='md:h-16 md:text-5xl sx:text-4xl text-xl font-bold md:pl-4 pl-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'
-                        strings={['Spring', 'React JS', 'MongoDB', 'PostgreSql', 'Solidity']}
+                        strings={['Spring', 'React JS', 'MongoDB', 'PostgreSql', 'Solidity', 'Material UI', 'Tailwind CSS']}
                         typeSpeed={120}
                         backSpeed={140}
                         loop                    
                     />
                 </div>
-                <p className='md:text-2xl text-xl font-bold text-neutral-400'>Developed a Real Estate trading web application using Blockchain technology as a graduation project.</p>
+                <p className='md:text-2xl text-xl font-poppins text-neutral-400'>Developed a Real Estate trading web3 application using Blockchain technology as a graduation project.</p>
                 <Link to='projects' spy={true} smooth={true} offset={-50} duration={1000}>
                     <button className='bg-violet-700 md:w-[200px] w-[160px] rounded-md font-medium my-8 py-3 text-violet-100 hover:scale-105 duration-200 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
                         View Projects
