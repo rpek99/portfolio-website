@@ -38,7 +38,7 @@ const Navbar = (props: Props) => {
                         </Link>
                     </li>
                     <li className='p-4 rounded-md text-[18px] hover:scale-110 hover:text-violet-400'>
-                        <Link to='about' spy={true} smooth={true} offset={-150} duration={600}>
+                        <Link to='about' spy={true} smooth={true} offset={-175} duration={600}>
                             <button>About</button>
                         </Link>
                     </li>

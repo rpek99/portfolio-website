@@ -1,0 +1,20 @@
+[
+    {
+        "title": "NFT Marketplace",
+        "desc": "NFT marketplace application that you can sell and buy nft. In this project each nft represent an estate.",
+        "sourceCodeUrl": "https://github.com/rpek99/nft-marketplace-real-estate",
+        "image": ""
+    },
+    {
+        "title": "Shopping App",
+        "desc": "This project is a shopping application where university members can buy and sell their belongings among themselves.",
+        "sourceCodeUrl": "https://github.com/rpek99/react-spring-shopping-application",
+        "image": ""
+    },
+    {
+        "title": "Jewelery Shopping App",
+        "desc": "This application designed for jewelery shopping with flask. It has different pages for user and admin.",
+        "sourceCodeUrl": "https://github.com/rpek99/flask-html-shopping-application",
+        "image": ""
+    }
+]

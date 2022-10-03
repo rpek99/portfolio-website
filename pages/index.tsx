@@ -4,7 +4,7 @@ import About from '../components/about';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
 import Navbar from '../components/navbar';
-import Technologies from '../components/technologies';
+import Projects from '../components/projects';
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <About />
       </Element>
       <Element id="projects" name='projects'>
-        <Technologies />
+        <Projects />
       </Element>
       <Element id="contact" name="contact">
         <Footer />
