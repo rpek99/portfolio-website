@@ -2,7 +2,7 @@ export default {
     titleTemplate: "Rustem Pek - Full Stack Developer | %s",
     defaultTitle: "Rustem Pek - Full Stack Developer",
     description:
-      "İstanbul, Turkiye • Full-Stack Developer • Web3",
+      "Full-Stack Developer • Web3 • Solidity • Smart Contracts",
     canonical: "https://www.rustempek.com/",
     openGraph: {
       type: "website",
