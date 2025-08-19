@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import {Link} from 'react-scroll'
 import { Particles } from '@/components/Particles';
 import HeroText from '@/components/HeroText';
@@ -15,9 +15,19 @@ interface Props {}
 
 const Hero = (props: Props) => {
     const isMobile = useMediaQuery({ maxWidth: 853 });
+    const [scrollY, setScrollY] = useState(0);
+    
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     
     return(
-        <div className='text-white p-2' id="home">
+        <div className='text-white' id="home">
            <Particles
                 className="absolute inset-0 -z-50"
                 quantity={100}
@@ -27,10 +37,10 @@ const Hero = (props: Props) => {
            />
            
            {!isMobile && (
-               <>
+               <div className='mb-12'>
                    <HeroText />
                    <figure
-                        className="absolute inset-4"
+                        className="absolute inset-0"
                         style={{ width: "100vw", height: "100vh" }}
                     >
                         <Canvas camera={{ position: [0, 2, 3] }}>
@@ -54,11 +64,11 @@ const Hero = (props: Props) => {
                         </Suspense>
                         </Canvas>
                     </figure>
-               </>
+               </div>
            )}
            
            {isMobile && (
-               <div className='flex flex-col'>
+               <div className='flex flex-col mb-48'>
                    <HeroText />
                    <div className='w-full h-250 absolute items-center justify-center mt-64'>
                        <Canvas camera={{ position: [0, 1.5, 2.5] }}>
@@ -75,7 +85,7 @@ const Hero = (props: Props) => {
                            <Float>
                                <Ghost
                                    scale={0.7}
-                                   rotation={[-0.9, Math.PI / 1.35, 0.12]}
+                                   rotation={[-0.9, Math.PI / 1.35 + (scrollY * 0.001), 0.12]}
                                    position={[0, 0, 0]}
                                />
                            </Float>

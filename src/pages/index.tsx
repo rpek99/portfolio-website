@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Rustem Pek</title>
       </Head>
-      <div className='container mx-auto max-w-7xl flex-1'>
+      <div className='container mx-auto flex-1 max-w-7xl'>
         <Navbar />
         <Element id="home" name='home'>
           <Hero />
