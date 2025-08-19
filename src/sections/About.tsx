@@ -23,7 +23,7 @@ const About = () => {
             <source src="assets/vid3.mp4" type="video/mp4" />
           </video>
           <div className="z-10">
-            <p className="headtext font-bold text-2xl md:text-3xl">Hi, I'm Rüstem Pek</p>
+            <p className="headtext font-bold text-2xl md:text-3xl">Hi, I&apos;m Rüstem Pek</p>
             <p className="subtext mt-4 text-sm md:text-base">
                 With 3+ years of full-stack experience, I craft dynamic web and mobile applications that combine secure back-end logic with seamless user experiences.
             </p>
