@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+  // Next.js automatically detects src/ folder structure
 }
 
 module.exports = nextConfig

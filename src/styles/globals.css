@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@import './tokens.css';
+
+@theme {
+  --color-midnight: #06091f;
+  --color-navy: #161a31;
+  --color-indigo: #1f1e39;
+  --color-storm: #282b4b;
+  --color-aqua: #33c2cc;
+  --color-mint: #57db96;
+  --color-royal: #5c33cc;
+  --color-lavender: #7a57db;
+  --color-fuchsia: #ca2f8c;
+  --color-orange: #cc6033;
+  --color-sand: #d6995c;
+  --color-coral: #ea4884;
+  --animate-orbit: orbit 50s linear infinite;
+  @keyframes orbit {
+    0% {
+      transform: rotate(calc(var(--angle) * 1deg))
+        translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));
+    }
+    100% {
+      transform: rotate(calc(var(--angle) * 1deg + 360deg))
+        translateY(calc(var(--radius) * 1px))
+        rotate(calc((var(--angle) * -1deg) - 360deg));
+    }
+  }
+  --animate-marquee: marquee 50s linear infinite;
+  --animate-marquee-vertical: marquee-vertical 50s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+}
+
+body {
+    @apply bg-neutral-900 text-white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.text-heading {
+  @apply font-bold text-3xl md:text-4xl;
+}
+
+/* About Section */
+.grid-1 {
+  @apply row-span-2 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
+.grid-2 {
+  @apply row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
+.grid-3 {
+  @apply row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
+
+
+.grid-default-color {
+  @apply p-6 bg-gradient-to-b from-neutral-700 to-neutral-800 rounded-2xl;
+}
+
+.grid-special-color {
+  @apply p-6 bg-gradient-to-b from-violet-600 to-purple-700 rounded-2xl;
+}
+
+.grid-black-color {
+  @apply p-6 bg-gradient-to-tl from-neutral-800 via-neutral-900 to-neutral-800 rounded-2xl;
+}
+
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--midnight);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neutral-700);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral-400);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles - removed default outline */
+*:focus {
+  outline: none;
+}
+
+/* Custom focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--neutral-400);
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background: var(--neutral-700);
+  color: var(--sand);
+}
+
+/* Footer responsive styles */
+@media (max-width: 768px) {
+  #contact {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Navbar button focus styles */
+.navbar button:focus,
+.navbar button:focus-visible {
+  outline: none;
+}
+
+.navbar button:active {
+  outline: none;
+}
+
