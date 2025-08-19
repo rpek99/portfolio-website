@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 
 function MousePosition() {
   const [mousePosition, setMousePosition] = useState({
