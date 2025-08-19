@@ -1,0 +1,54 @@
+{
+  "name": "Rüstem Pek",
+  "role": "Software Engineer",
+  "intro": "Full-stack developer focusing on 3D web and systems.",
+  "bio": "Passionate software engineer with expertise in modern web technologies, 3D graphics, and full-stack development. I love creating immersive digital experiences and building robust backend systems.",
+  "social": {
+    "github": "https://github.com/rpek99",
+    "linkedin": "https://www.linkedin.com/in/rustem-pek/",
+    "email": "rstmpk28@gmail.com"
+  },
+  "skills": [
+    "React", "Next.js", "Three.js", "Node.js", "Python", "Flask", "MongoDB", "PostgreSQL", "Docker", "AWS"
+  ],
+  "projects": [
+    {
+      "title": "NFT Marketplace",
+      "slug": "nft-marketplace",
+      "desc": "NFT marketplace application that you can sell and buy nft. In this project each nft represent an estate.",
+      "tags": ["React", "Solidity", "Web3", "Ethereum"],
+      "link": "https://github.com/rpek99/nft-marketplace-real-estate",
+      "image": "/assets/projects/nft-marketplace.jpg"
+    },
+    {
+      "title": "Shopping App",
+      "slug": "shopping-app",
+      "desc": "This project is a shopping application where university members can buy and sell their belongings among themselves.",
+      "tags": ["React", "Spring Boot", "Java", "MySQL"],
+      "link": "https://github.com/rpek99/react-spring-shopping-application",
+      "image": "/assets/projects/shopping-app.jpg"
+    },
+    {
+      "title": "Jewelery Shopping App",
+      "slug": "jewelery-app",
+      "desc": "This application designed for jewelery shopping with flask. It also have admin panel to track user actions.",
+      "tags": ["Flask", "Python", "HTML", "CSS", "SQLite"],
+      "link": "https://github.com/rpek99/flask-html-shopping-application",
+      "image": "/assets/projects/jewelery-app.jpg"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Software Engineer",
+      "company": "Freelance",
+      "date": "2023-Present",
+      "description": "Working on various web development projects including 3D web applications, e-commerce platforms, and custom software solutions."
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Personal Projects",
+      "date": "2022-Present",
+      "description": "Developed multiple full-stack applications using modern technologies like React, Next.js, Flask, and Three.js."
+    }
+  ]
+}
