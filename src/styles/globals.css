@@ -49,9 +49,37 @@
   }
 }
 
+/* iOS-only blur fix: içerik ayrı, blur overlay ::before'da */
+.navbar-iosfix {
+  position: sticky; /* mobilde fixed kullanıyorsan md:sticky ile kombine edebilirsin */
+  top: 0;
+  z-index: 50;
+  background: rgba(0,0,0,0.0); /* iOS'ta arka planı şeffaf bırak */
+}
+
+/* Sadece WebKit/iOS destekliyorsa çalışır */
+@supports (-webkit-backdrop-filter: blur(0)) {
+  .navbar-iosfix::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);   /* yarı saydam arka plan */
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);   /* macOS Safari’de de çalışır */
+    pointer-events: none;
+    z-index: 0;
+  }
+  /* içerik bulanmasın diye öne al */
+  .navbar-iosfix > .navbar-content {
+    position: relative;
+    z-index: 1;
+  }
+}
+
 body {
     @apply bg-neutral-900 text-white;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .text-heading {
@@ -105,6 +133,7 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Focus styles - removed default outline */
