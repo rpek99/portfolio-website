@@ -30,9 +30,9 @@ const Navbar = (props: Props) => {
     return (
         <div className="navbar navbar-iosfix w-full">
             <div className={`navbar ${
-                (isMobile && !nav) ? 'sticky top-0 z-50 w-full bg-primary/40 ease-in-out duration-300 backdrop-blur-lg' :
+                (isMobile && !nav) ? 'relative z-50 w-full bg-primary/40 ease-in-out duration-300 backdrop-blur-lg' :
                 (!isMobile) ? 'fixed top-0 z-50 w-full ease-in-out duration-300 inset-x-0 backdrop-blur-lg bg-primary/40' : 
-                'sticky top-0 z-50 w-full bg-primary/40 ease-in-out duration-300'
+                'relative z-50 w-full bg-primary/40 ease-in-out duration-300'
             }`}>
                 <div className='flex justify-between items-center h-[50px] max-w-[1240px] mx-auto px-4 text-white'>
                     <button className="focus:outline-none">
