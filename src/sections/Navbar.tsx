@@ -6,12 +6,12 @@ interface Props {}
 
 const Navbar = (props: Props) => {
 
-    const [nav, setNav] = useState(false);
+    // const [nav, setNav] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
 
-    const handleNav = () => {
-        setNav(!nav);
-    }
+    // const handleNav = () => {
+    //     setNav(!nav);
+    // }
 
 
     const checkScreenSize = () => {
@@ -30,7 +30,6 @@ const Navbar = (props: Props) => {
     return (
         <div className="navbar navbar-iosfix w-full">
             <div className={`navbar ${
-                (isMobile && !nav) ? 'relative z-50 w-full bg-primary/40 ease-in-out duration-300 backdrop-blur-lg' :
                 (!isMobile) ? 'fixed top-0 z-50 w-full ease-in-out duration-300 inset-x-0 backdrop-blur-lg bg-primary/40' : 
                 'relative z-50 w-full bg-primary/40 ease-in-out duration-300'
             }`}>
@@ -60,10 +59,10 @@ const Navbar = (props: Props) => {
                             </Link>
                         </li>
                     </ul>
-                    <div onClick={handleNav} className='block md:hidden'>
+                    {/* <div onClick={handleNav} className='block md:hidden'>
                         {nav ? <button className="focus:outline-none"><AiOutlineClose size={20} /></button> : <button className="focus:outline-none"><AiOutlineMenu size={20} /></button>}      
-                    </div>
-                    <div className={nav ? 'fixed left-0 top-0 w-[40%] h-full border-r border-r-neutral-800 bg-neutral-900 ease-in-out duration-500 block md:hidden' : 'fixed left-[-100%]'}>
+                    </div> */}
+                    {/* <div className={nav ? 'fixed left-0 top-0 w-[40%] h-full border-r border-r-neutral-800 bg-neutral-900 ease-in-out duration-500 block md:hidden' : 'fixed left-[-100%]'}>
                         <h1 className='w-full text-3xl font-bold text-violet-600 m-4'>RPEK.</h1>
                         <ul className='p-4 font-poppins text-xl'>
                             <li className='p-4 border-b border-gray-600 hover:scale-110 hover:text-violet-500 ease-in-out duration-200'>
@@ -87,7 +86,7 @@ const Navbar = (props: Props) => {
                                 </Link>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
